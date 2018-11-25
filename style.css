@@ -1,108 +1,140 @@
-body {
-  background: linear-gradient(to bottom, #f0f2f0, #000c40);
-  font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-}
-
-a {
-  text-decoration:none;
-}
-
-h2 {
-  font-family: 'Permanent Marker', cursive;
-}
-
-h1 {
-  font-family: 'Orbitron', sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  display:incline-block;
-}
-
-div {
-  background: linear-gradient(to top, #ee0979, #ff6a00);
-  border: 1px solid grey;
-  padding-top: 15px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  margin: 30px auto;
-  width: 500px;
+.banner {
+  color: white;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px ;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Kalam', cursive;
+
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+  font-family: 'Monda', sans-serif;
+}
 }
 
-.list-align {
-  text-align: left;
+#cv {
+  padding: 10px;
+  height: 1200px;
+}
+/* BAAAAAANNNNnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnNERRRRRRR */
+
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
 }
 
-ul li:before {
-  content: '~  ';
+.container {
+  height: 100vh;
 }
 
-.albums-pics {
-  width: 200px;
-  height: 200px;
-  text-align: right;
+.container .card{
+  height: 700px;
 }
 
-.profile-picture {
-  border-radius: 20px;
+.card2 {
+  width: 270px;
+  border: 2px solid black;
+}
+
+#cv {
+  background: linear-gradient(to top, #d3cce3, #e9e4f0);
+}
+
+#competences {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/code.jpg');
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
   width: 150px;
-  height: 150px;
-  border: 10px;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin-right: 200px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
 }
 
-#header {
-  background: none;
-  border: none;
+/* CONTENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU */
+
+.container {
+  padding-top: 50px;
+  padding-left: 30px;
 }
 
-#container {
-  align-items: normal;
-  width: 1000px;
+/* FOOOOOOOOOOOOOOOOOOOOOOTTTTERRRRRRRRRRRRRRRRRRRRRRRRRR */
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
 }
 
-#first {
-  width: 400px;
-  background: linear-gradient(to top, #654ea3, #eaafc8);
-}
 
-#second {
-  width: 600px;
-  background: linear-gradient(to top, #654ea3, #eaafc8);
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.list-inline {
-  padding-left: 0px;
-}
